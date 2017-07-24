@@ -1,0 +1,212 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    background: black;
+
+}
+.particles-js {
+    position: fixed;
+    z-index: -1;
+}
+.kkk {
+    position: fixed;
+    top: 40px;
+    width: 100%;
+}
+/* ≡播放列表 */
+.control-1 {
+    width: 100%;
+    height: 35px;
+    color: white;
+}
+#id-span-musicList {
+    position: absolute;
+    right: 15px;
+    font-size: 40px;
+}
+@keyframes play{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.logo-rotate {
+    animation: play 15s linear infinite;
+    animation-play-state: paused;
+}
+/* 播放列表 */
+.list-backgound {
+    position: fixed;
+    top: -375px;
+    background: #0E6862;
+    opacity: 0.7;
+    width: 100%;
+    height: 375px;
+    transition: transform 1s;
+
+}
+.music-files {
+    position: fixed;
+    top: -375px;
+    width: 100%;
+    height: 375px;
+    transition: transform 1s;
+}
+.list-show {
+    transform: translateY(375px);
+
+}
+h3 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+.song{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+.song-play {
+    color: black;
+}
+/* 圆形图片 */
+#id-img-logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.rotate {
+    animation-play-state: running;
+}
+/* 进度条 */
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.range {
+    background: linear-gradient(90deg, rgba(14, 104, 98, 1)0%, rgba(255, 255, 255, 1)0%);
+}
+/* 进度时间 */
+.control-2 {
+    width: 100%;
+    height: 15px;
+    color: white;
+}
+.current {
+    float: left;
+    font-size: 10px;
+}
+.duration {
+    float: right;
+    font-size: 10px;
+}
+/* 曲名、歌手 */
+.content {
+    position: relative;
+    height: 80px;
+    padding: 25px;
+    color: white;
+    margin: 10px;
+}
+.name {
+    font-size: 18px;
+}
+/* 主要播放控件 */
+.ksjmcg {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 130px;
+    background: #0E6862;
+    opacity: 0.2;
+}
+.control-3 {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 130px;
+    color: white;
+
+}
+.control3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+/*播放模式*/
+.mode-show {
+    display: inline-block !important;
+}
+.mode {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+/* 上一曲 */
+#id-div-previous {
+    left: 105px;
+    font-size: 30px;
+}
+/* 播放、暂停 */
+.circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 2px solid;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.play {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -55%);
+    font-size: 40px;
+}
+.play-show {
+    display: inline-block;
+}
+/* 下一曲 */
+#id-div-next {
+    right: 105px;
+    font-size: 30px;
+}
+/* 音量 */
+#id-div-volume {
+    right: 30px;
+    font-size: 25px;
+}
+.volume-show {
+    display: inline-block !important;
+}
+#id-input-volume {
+    display: none;
+    position: absolute;
+    bottom: 125px;
+    right: -26px;
+    width: 130px;
+    background: linear-gradient(90deg, rgba(14, 104, 98, 1)50%, rgba(255, 255, 255, 1)50%);
+    transform: rotate(-90deg);
+}
